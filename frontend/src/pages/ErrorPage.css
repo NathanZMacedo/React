@@ -1,0 +1,14 @@
+#errorPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: collumn;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+#errorPage h4 a{
+    text-decoration: none;
+    color: cyan;
+}
