@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import './AddNew.css'
 
 function AddNew() {
-    const [mouse, setMouse]= useState(false)
+    const [mouse, setMouse]= useState(true)
   return (
     <div 
     onMouseLeave={()=>setMouse(true)} 
