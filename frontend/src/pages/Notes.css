@@ -1,22 +1,4 @@
-.note{
-    background-color: #202022;
-    color: white;
-    width: 456px;
-    height: 256px;
-    border-radius: 10px;
-    margin: 20px;
-}
-.note h1{
-    display: flex;
-    justify-content: center;
 
-}
-.note div{
-    margin-left: 8px
-}
-.desc{
-    font-size: 1.6rem ;
-}
 .notes  {
     display: flex;
     padding: 32px;
