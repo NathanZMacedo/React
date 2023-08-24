@@ -2,6 +2,8 @@ import React from 'react'
 import trash from '../../svgs/trash.svg'
 import edit from '../../svgs/edit.png'
 import './Note.css'
+import {TbTrashXFilled} from 'react-icons/tb'
+import {RiEdit2Fill} from 'react-icons/ri'
 
 function Note({n}) {
   return (
@@ -15,8 +17,8 @@ function Note({n}) {
                 {n.date}
             </div>
             <div>
-                <div><img src={edit} alt="" /></div>
-                <div><img src={trash} alt="" /></div>
+                <RiEdit2Fill width={50} color='#CACACA'/>
+                <TbTrashXFilled width={50} color='#CACACA'/>
             </div>
         </div>
     </div>
