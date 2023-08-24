@@ -5,6 +5,9 @@
     height: 256px;
     border-radius: 10px;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .note h1{
     display: flex;

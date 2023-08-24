@@ -17,8 +17,8 @@ function Note({n}) {
                 {n.date}
             </div>
             <div>
-                <RiEdit2Fill width={50} color='#CACACA'/>
-                <TbTrashXFilled width={50} color='#CACACA'/>
+                <RiEdit2Fill size={25} color='#CACACA'/>
+                <TbTrashXFilled size={25} color='#CACACA'/>
             </div>
         </div>
     </div>
