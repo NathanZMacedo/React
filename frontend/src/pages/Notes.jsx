@@ -8,16 +8,20 @@ function Notes() {
   const [notes,setNotes] = useState([{title: "Muito legal",description: "eu amei one piece",date: "08/09/2023", id: 1},{title: "Muito legal",description: "eu amei one piece",date: "08/09/2023", id: 1},{title: "Muito legal",description: "eu amei one piece",date: "08/09/2023", id: 1},{title: "Muito legal",description: "eu amei one piece",date: "08/09/2023", id: 1},{title: "Muito legal",description: "eu amei one piece",date: "08/09/2023", id: 1},{title: "Muito legal",description: "eu amei one piece",date: "08/09/2023", id: 1},{title: "Muito legal",description: "eu amei one piece",date: "08/09/2023", id: 1},])
   const [showModal,setShowModal] = useState(false)
 
+  const mudarModal= ()=>{
+    setShowModal((state)=>!state)
+  }
+
   return (
     <div className='notes'> 
-      <AddNew/>
+      <AddNew abrirOModal={mudarModal}/>
       {
         notes.map(n=> <Note n={n}/>
         )
       }
 
       {
-        showModal ? <Modal/> : null
+        showModal ? <Modal fecharOModal={mudarModal}/> : null
       }
     </div>
   )
