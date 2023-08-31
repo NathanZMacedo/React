@@ -1,6 +1,7 @@
 import React from 'react'
 import './Modal.css'
 import {AiFillCloseCircle} from 'react-icons/ai'
+import Form from '../Form/Form'
 
 function Modal(props) {
   
@@ -10,15 +11,7 @@ function Modal(props) {
         <AiFillCloseCircle size={25} color='white'/>
       </div>
         <div>
-          <form action="" className="form">
-
-            <label htmlFor="title">Titulo</label>
-            <input type="text" placeholder='Titulo da anotação' name='title' id='title'/>
-
-            <label htmlFor="description">Descrição</label>
-            <input type="text" placeholder='Descrição da anotação' name='title' id='title'/>
-            <button>Confirmar Anotação</button>
-          </form>
+          <Form/>
         </div>
     </div>
   )

@@ -5,7 +5,7 @@ import './Note.css'
 import {TbTrashXFilled} from 'react-icons/tb'
 import {RiEdit2Fill} from 'react-icons/ri'
 
-function Note({n}) {
+function Note({n, abrirOModal}) {
   return (
     <div className='note'>
         <div>
@@ -16,10 +16,15 @@ function Note({n}) {
             <div className='dataNote'>
                 {n.date}
             </div>
+
             <div>
-                <RiEdit2Fill size={25} color='#CACACA'/>
-                <TbTrashXFilled size={25} color='#CACACA'/>
+                <div onClick={()=>abrirOModal()}><RiEdit2Fill size={25} color='#CACACA'/>
+                </div>
+
+                <div><TbTrashXFilled size={25} color='#CACACA'/>
+                </div>
             </div>
+
         </div>
     </div>
   )
